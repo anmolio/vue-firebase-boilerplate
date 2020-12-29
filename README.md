@@ -1,4 +1,4 @@
-# congenial-tribble
+# Vue Firebase Boilerplate
 
 ## Project setup
 ```
