@@ -41,8 +41,12 @@
         </template>
       </b-navbar>
     </template>
-    <router-view/>
+    <router-view class="container main"/>
   </div>
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+.main {
+    margin-top: 2em;
+}
+</style>
