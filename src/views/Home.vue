@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <button class="button is-danger is-outlined" @click="login()">Login with google</button>
+    <button class="button is-danger is-outlined" @click="logout()">Logout</button>
   </div>
 </template>
 
@@ -11,6 +12,6 @@ import { createNamespacedHelpers } from 'vuex';
 
 export default {
   name: 'Home',
-  methods: mapActions('auth', ['login']),
+  methods: mapActions('auth', ['login', 'logout']),
 };
 </script>

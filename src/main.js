@@ -5,6 +5,7 @@ import router from './router';
 import store from './store/index';
 import 'buefy/dist/buefy.css';
 import firebase from './firebase';
+import auth from './auth';
 
 Vue.use(Buefy);
 Vue.config.productionTip = false;
