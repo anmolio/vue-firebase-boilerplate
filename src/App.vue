@@ -29,10 +29,10 @@
         <template slot="end">
             <b-navbar-item tag="div">
                 <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
+                    <a class="button is-primary" @click="logout()" v-if="isLoggedIn">
+                        <strong>Logout</strong>
                     </a>
-                    <a class="button is-light">
+                    <a class="button is-light" @click="login()" v-if="!isLoggedIn">
                         Log in
                     </a>
                 </div>
@@ -44,6 +44,13 @@
   </div>
 </template>
 
+<script>
+import {mapActions, mapState} from 'vuex';
+export default {
+    computed: mapState ('auth', ['user', 'isLoggedIn']),
+    methods: mapActions ('auth', ['logout', 'login']),
+}
+</script>
 <style lang="scss">
 .main {
     margin-top: 2em;
