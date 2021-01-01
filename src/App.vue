@@ -28,6 +28,9 @@
 
         <template slot="end">
             <b-navbar-item tag="div">
+                <b-navbar-item >
+                    {{user.name}}
+                </b-navbar-item >
                 <div class="buttons">
                     <a class="button is-primary" @click="logout()" v-if="isLoggedIn">
                         <strong>Logout</strong>
