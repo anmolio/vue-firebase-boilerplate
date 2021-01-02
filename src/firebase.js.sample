@@ -1,0 +1,17 @@
+import firebase from 'firebase';
+
+var firebaseConfig = {
+    apiKey: "xxxxxxx",
+    authDomain: "xxxxxxx",
+    projectId: "xxxxxxx",
+    storageBucket: "xxxxxxx",
+    messagingSenderId: "xxxxxxx",
+    appId: "xxxxxxx",
+    measurementId: "xxxxxxx"
+  };
+  
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
+export default firebase;
