@@ -3,7 +3,7 @@ import store from '@/store';
 import db from '@/db';
 
 firebase.auth().onAuthStateChanged((user) => {
-    console.log(user);
+
     if (user) {
         if (user.user)
         {
@@ -20,5 +20,5 @@ firebase.auth().onAuthStateChanged((user) => {
         store.commit('auth/setUser', setUser);
     } else {
         store.commit('auth/setUser', null);
-}
+    }
 });
